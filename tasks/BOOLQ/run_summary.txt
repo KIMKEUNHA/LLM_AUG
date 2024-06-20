@@ -1,0 +1,22 @@
+DATALOADER:0 TEST RESULTS
+{'test_accuracy': {'accuracy': tensor(0.6994, device='cuda:0')},
+ 'test_loss': 0.6109371185302734}
+--------------------------------------------------------------------------------
+Testing: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 205/205 [00:27<00:00,  7.43it/s]
+wandb: - 0.019 MB of 0.019 MB uploaded
+wandb: Run history:
+wandb:               epoch ▁▁▁▁▁▁▁▁▁▁▁▁▅▅▅▅▅▅▅▅▅▅▅▅▅██████████████
+wandb:       learning_rate ▃▅▇██████▇▇▇▇▆▆▆▅▅▅▄▄▄▃▃▃▂▂▂▂▁▁▁▁▁▁
+wandb:           test_loss ▁
+wandb:          train_loss ▇▅▇▅▇▆▆▆▆▅▆▄▃▅▇▅▄▇▆█▄▃▆▇▃▃▄▄▂▄▅▃▅▁▂
+wandb: trainer/global_step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███▆
+wandb:            val_loss █▁█
+wandb: 
+wandb: Run summary:
+wandb:               epoch 2
+wandb:       learning_rate 0.0
+wandb:           test_loss 0.61094
+wandb:          train_loss 0.22495
+wandb: trainer/global_step 1180
+wandb:            val_loss 0.64044
+wandb: 

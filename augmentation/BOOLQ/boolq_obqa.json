@@ -1,0 +1,49 @@
+{
+    "BoolQ": {
+        "end": "\n\nNew data :\n\n",
+        "front_old": "The following are examples of datasets showing whether the answer to the question is true or false based on the passage. Refer to the example and create two new data. Please vary the topics of your questions to people, regions, places, science, common sense, life, society, etc. Please include both specific and general questions. Avoid famous topics or well-known facts as much as possible. \n\nExample dataset :\n\n",
+        "front":"The following are examples of datasets used for binary classification tasks, specifically determining whether the answer to a given question is true or false based on information provided in a passage. Each dataset contains a question, a passage, and an answer. Refer to the example and create two new data. Please vary the topics of your questions to people, regions, places, science, common sense, life, society, etc. Make your questions as specific as possible. Avoid questions about famous topics or well-known places, people, animals, and regions. True or false labels must always match the facts. \n\nExample dataset :\n\n",
+        "keys": [
+            "question",
+            "answer",
+            "passage"
+        ],
+        "label_dic" : {"true":"true","false":"false"},
+        "label_name": "answer",
+        "name": "google/boolq",
+        "num_label": 2,
+        "prompt": "Question: {question}\nPassage: {passage}\nAnswer: {answer}"
+    },
+    "OBQA": {
+        "end": "\n\nNew data :\n\n",
+        "front": "The following are examples of datasets completing a sentence by choosing the latter part that most naturally follows the given sentences among the choices. Refer to the example and create two new data.\n\nExample dataset :\n\n",
+        "front_chatgpt":"The following are examples of multiple-choice datasets where the task is to determine the correct answer to a given question based on common knowledge or logical inference. Each dataset contains a question, a list of multiple-choice answers, and the correct answer. Refer to the example and create two new data.\n\nExample dataset :\n\n",
+        "keys": [
+            "question_stem",
+            "choices",
+            "answerKey"
+        ],
+        "label_name": "answerKey", 
+        "name": "allenai/openbookqa", 
+        "num_label": 2, 
+        "prompt": "Question: {question_stem}\nChoices: {choiceString}\nAnswer: {answerString}" 
+    },
+    "StoryCloze": { 
+        "end": "\n\nNew data :\n\n", 
+        "front": "The following are examples of datasets that selecting possible continuation sentences from two possible choices for input sentences . Refer to the example and create one new data.\n\nExample dataset :\n\n",
+        "keys": [
+            "input_sentence_1",
+            "input_sentence_2",
+            "input_sentence_3",
+            "input_sentence_4",
+            "sentence_quiz1",
+            "sentence_quiz2",
+            "answer_right_ending"
+        ], 
+        "label_dic" : {"1":"sentence_quiz1","2":"sentence_quiz2"},
+        "label_name": "answer_right_ending", 
+        "name": "gimmaru/story_cloze-2016",
+        "num_label": 2,
+        "prompt": "Input sentences: {input_sentence_1} {input_sentence_2} {input_sentence_3} {input_sentence_4}\nChoice 1: {sentence_quiz1}\nChoice 2: {sentence_quiz2}\nAnswer: {answerString}"
+    }
+}
